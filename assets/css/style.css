@@ -1,0 +1,351 @@
+/*File for Basic-Portfolio for Jeanmarie Martinko*/
+ 
+* {
+	box-sizing: border-box; 
+}
+
+/*step 1 of 3 to make sticky footer*/
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+/*margin 85 (height of footer) is step 2 of 3 to make sticky footer*/
+body {
+	background-image: url("../images/paper_3.png");
+	margin: 0 0 100px 0;
+	color: #777777;
+	font-size: 18px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/*#wrapper {
+	width: 100%;	
+	display: block;*/
+	/*Note to self: This margin setting helps to "center" the 960px wrapper in browser */
+	/*margin: 0px auto;*/
+	/*font-size: 18px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: url("../images/paper_3.png"); */
+
+
+header {
+	margin: 0 auto;
+	width: 960px;
+}
+
+
+#headBox {
+
+	background-color: #ffffff;
+	overflow: auto;
+	margin-bottom: 30px;
+	border-bottom: solid #cccccc 2px;
+
+}
+
+/*
+
+#header-content {
+
+	width: 960px;
+	height: 100px;
+	margin: 0px;
+	vertical-align: middle;
+}
+*/
+
+
+#navBar {	
+	/*float: right;
+	display: inline-block;
+	align-items: center;*/
+
+	/*vertical-align: center;*/
+	/*position: relative;*/
+	/*text-align: right;*/
+	/*background: #ffffff;*/
+	/*width: 230px;
+	height: 100px;
+	float: right;*/
+	/*margin-right: 355px;*/
+	/*text-align: right;*/
+	/*align-items: center;*/
+	
+	background-color: #ffffff;
+	float: right;
+	padding-top: 35px;
+}
+
+a  {
+	color: #777777;
+}
+
+
+.nav {
+
+	/*text-align: right;
+	float: right;*/
+	color: #777777;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	/*display: flex;
+	align-items: center;
+	position: relative;*/
+}
+
+.nav:hover { 
+  color: #ffffff;
+  background-color: #4aaaa5;
+  opacity: 0.75;
+}
+
+.nav:focus {  
+	color: #ffffff;
+	background-color: #777777; 
+}
+/*This is the JM "logo" that appears at the top of each page.*/
+#jmNamebox {
+	
+	letter-spacing: 1.2px;
+	background: #4aaaa5;
+	color: #ffffff;
+	float:left;
+	margin:0 0 0 24px;
+	align-items: center;
+	justify-content: center;
+	font-size: 26px;
+	padding: 25px;
+	/*margin-left: 355px;*/
+	/*margin-right: 355px;*/
+	/*position: absolute;*/
+	overflow: auto;
+}
+/*This is the wrapper for both the "bio" section box and the "connect with me" box*/
+#container {
+	margin-bottom: 20px;
+	/*overflow: auto;
+	clear: both;*/
+	
+	width: 960px;
+	margin: auto;
+}
+
+/*This is the box containing "about me," my profile pic and some text*/
+.main-box {
+	display: inline-block;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	width: 650px;
+	padding: 30px;
+}
+
+/*"secBox"is the area in the bio content box that starts with "About Me","Portfolio" and "Contact"*/
+.secBox {
+
+	padding-left: 25px;
+	padding-right: 25px;
+	/*font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1.2px;*/
+}
+/*
+.menuBox {
+
+	display: block; 
+	align-items: center; 
+	justify-content;
+}*/
+
+/*My "first" profile pic, followed by a "second" pic when hovered over with mouse*/
+#profilePic {
+
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	float: left;
+}
+
+
+
+#jmPic {
+	float: left;
+	margin-left: 20px;
+	margin-right: 10px;
+	width: 160px;
+	height: 160px;
+	clear: both;
+}
+
+
+#jmPic:hover {
+ background-image: url("assets/images/elijah.jpg");
+ opacity: 1;
+}
+
+p {
+	margin-left: 20px;
+	line-height: 150%;
+	line-height: 1.5;
+}	
+
+h1 {
+	color: #4aaaa5;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+h2, h3 { 
+	color: #4aaaa5;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 18px;
+
+}
+
+/*This is the "aside"/sidebox with social media icons*/
+#connectBox {
+	float: right;
+	width: 270px;
+	letter-spacing: 1.2px;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 30px;
+  	/*position: relative;*/
+  	color: #4aaaa5;
+  	text-align: center;
+  	clear: both;
+}
+/*This refers to the logos for social media sites*/
+#logos {
+
+	width: 30%;
+   height: 80%;
+   display: inline-block;
+   /*text-align: center;*/
+   margin: 0 auto;
+	/*display: inline;
+	width: 55px;
+	height: 55px;
+	margin-right: 8px;*/
+}
+
+/*Makes social icon logos transparent on hover prior to clicking*/
+img:hover {
+    opacity: 0.5;
+}
+
+
+#footBox {
+	height: 100px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 5px;
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	background: #666666;
+	color: #ffffff;
+	font-size: 16px;
+    position: absolute;
+    bottom: 0; 
+    display: inline-flex;
+  	align-items: center;
+  	justify-content: center;
+  	font-style: italic;  
+}
+
+.box {
+
+	/*float: left;
+	position: relative;
+	width: 220px;
+	height: 180px;*/
+
+	display: inline;
+	margin-left: 40px;
+	box-sizing: border-box;
+	width: 220px;
+	height: 180px;
+	padding: 10px;
+	float: left;
+	display:inline-flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;	
+ }
+
+
+.banner {
+	
+	/*position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;*/
+
+	position: absolute;
+	width: 200px;
+	bottom: 20px;
+	padding:5px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	margin-left: 20px;
+	/*display: inline-flex;
+	justify-content: center;*/
+	align-items: center;
+	text-align: center;
+	/*overflow: auto;*/
+}
+
+#contact-form {
+	margin: 30px;
+	input: wide;
+}
+	
+input {
+	width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #dddddd;
+}
+
+textarea {
+	width: 100%;
+	height: 175px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #dddddd;
+
+}
+
+#submit-button {
+
+	height: 40px;
+	width: 20%;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+#regular-box {
+
+	padding: 12px 20px;
+	resize: both;
+}
+
+
+
+#message-box {
+	padding: 100px 20px;
+	resize: vertical;		   	
+}
