@@ -1,0 +1,99 @@
+<!--Added additional customization to style:
+(i) sticky footer;
+(ii) hover effect on navigation bar, changing colors;
+(iii) "secondary" profile photo appears upon hover;
+(iv) vertical and horizontal alignment in certain sections achieved with  various combinations (as appropriate) of "display: inline-flex", "align-items: center", and "justify-content- center"-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+	<meta charset="utf-8">
+	<title>Basic Portfolio_JM</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- header with nav bar Name -->
+	<div id="headBox">
+
+		<header>
+			<a href="index.html"><h1 id="jmNamebox">Jeanmarie Martinko</h1></a>
+			<nav id="navBar">
+				<a class="nav" href="index.html">About &nbsp|</a>
+				<a class="nav" href="portfolio.html">Portfolio &nbsp|</a>
+				<a class="nav" href="contact.html">Contact</a> 
+			</nav>
+
+		</header>
+
+	</div>
+	
+	
+	<!-- Contains both the (i) main bio area with pic and description and (ii) the sidebar with the social icons/aside -->
+	<div id="container">
+
+		<div class="main-box">
+
+			<br>
+
+			<div class="secBox">
+			
+				<h1>About Me</h1>
+
+				<hr>
+
+			</div>
+			
+			<!-- Added secondary image that appears when hovering over "jmPic" -->
+
+			<div id="profilePic">
+
+			<img id="jmPic" src="assets/images/JMandAnnamae.jpg" alt="an image of JM with white and gray kitten" onmouseover="this.src='assets/images/elijah.jpg'" alt="an image of JM riding a horse" onmouseout="this.src='assets/images/JMandAnnamae.jpg'" alt="an image of JM with white and gray kitten"/>
+
+			<p>Hover over me!</p>
+
+			</div>
+
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+			<br>
+			<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+			<br>
+			<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+		
+		</div>
+		
+		<!-- Connect with Me -->
+		<aside id="connectBox">
+
+			<br>
+
+			<h2>Connect with Me</h2>
+
+				<br>
+
+			<hr>
+
+				<br>
+
+			<a id="gitH" href="https://github.com/DynamicalPerspectives" target="_blank"><img id="logos" src="assets/images/github2.png"/></a>
+
+			<a id="linkIn" href="https://www.linkedin.com/in/jeanmarie-martinko-3505ba" target="_blank"><img id="logos" src="
+			assets/images/social-linkedin-square2.png"/></a>
+
+			<a id="stackOflow" href="http://stackexchange.com/users/10158258/dynamical" target="_blank"><img id="logos" src="assets/images/stackoverflow.png"/></a>
+
+		</aside>
+
+	</div>
+
+	<footer id="footBox">&copy;Copyright 2017 Jeanmarie Martinko</footer>
+
+</div>
+
+</body>
+
+</html>
